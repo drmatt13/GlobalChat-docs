@@ -114,8 +114,11 @@ export default function Home() {
             </span>
           </p>
           <p className="mt-6">
-            This command will start all the required containers in the correct
-            order.
+            ^{" "}
+            <span className="italic">
+              This command will build the images if they don{"'"}t already exist
+              and start the containers.
+            </span>
           </p>
           <p className="mt-6">
             When you need to stop the application, use the following command in
@@ -128,8 +131,11 @@ export default function Home() {
             </span>
           </p>
           <p className="mt-6">
-            This will gracefully stop all the running containers associated with
-            the application.
+            ^{" "}
+            <span className="italic">
+              This command will gracefully stop both running containers
+              associated with the application.
+            </span>
           </p>
           <p className="mt-6">
             <span className="font-bold">Note:</span>{" "}
@@ -227,7 +233,7 @@ export default function Home() {
                     Socket.io server URL dynamically.
                   </li>
                   <li className="mt-6">
-                    Starts the application using Docker Compose.
+                    Builds and then starts the application using Docker Compose.
                   </li>
                 </ul>
                 <p className="mt-6">
