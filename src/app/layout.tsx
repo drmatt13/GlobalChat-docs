@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ColorStream Dynamics: Documentation",
+  title: "GlobalChat: Documentation",
 };
 
 export default function RootLayout({
