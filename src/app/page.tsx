@@ -227,8 +227,7 @@ export default function Home() {
                     Socket.io server URL dynamically.
                   </li>
                   <li className="mt-6">
-                    Retrieves the instance’s public IP to configure the
-                    Socket.io server URL dynamically.
+                    Starts the application using Docker Compose.
                   </li>
                 </ul>
                 <p className="mt-6">
