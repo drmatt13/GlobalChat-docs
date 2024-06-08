@@ -5,18 +5,18 @@ import { useEffect } from "react";
 /* eslint-disable @next/next/no-img-element */
 
 export default function Home() {
-  useEffect(() => {
-    preloadImages();
-  }, []);
+  // useEffect(() => {
+  //   preloadImages();
+  // }, []);
 
-  const preloadImages = () => {
-    const imageUrls = ["/test.png"];
+  // const preloadImages = () => {
+  //   const imageUrls = ["/test.png"];
 
-    imageUrls.forEach((url) => {
-      const img = new Image();
-      img.src = url;
-    });
-  };
+  //   imageUrls.forEach((url) => {
+  //     const img = new Image();
+  //     img.src = url;
+  //   });
+  // };
 
   return (
     <>
@@ -124,7 +124,7 @@ export default function Home() {
               className="italic bg-red-200 w-max pl-0.5 pr-1 whitespace-pre-wrap"
               style={{ whiteSpace: "nowrap" }}
             >
-              docker-compose up
+              docker-compose down
             </span>
           </p>
           <p className="mt-6">
@@ -170,12 +170,13 @@ export default function Home() {
               <div className="font-bold">Launch an EC2 Instance:</div>
               <ul className="list-disc mt-6 ml-4">
                 <li>
-                  Choose a <span className="underline">t2.small</span> instance
-                  for sufficient RAM during the build process. The{" "}
+                  Select a <span className="underline">t2.small</span> instance
+                  to ensure adequate RAM for the build process. The{" "}
                   <span className="italic">
                     {'"'}t2.micro{'"'}
                   </span>{" "}
-                  instance type is not recommended due to memory constraints.
+                  instance type is not recommended as it lacks the necessary
+                  resources to successfully complete the build.
                 </li>
                 <li className="mt-6">
                   Use an Amazon Linux 2 AMI for compatibility with the provided
@@ -238,7 +239,7 @@ export default function Home() {
                 <div className="flex min-w-full">
                   <p className="px-2.5 flex-grow"></p>
                 </div>
-                <div className="mt-6 bg-black/90 py-2.5 rounded-md overflow-x-auto border shadow whitespace-nowrap text-white font-mono">
+                <div className="mt-6 bg-black/90 py-2.5 rounded-md overflow-x-auto border shadow whitespace-nowrap text-white font-mono text-xs /lg:text-sm">
                   <div className="flex min-w-full">
                     <p className="px-2.5 flex-grow">
                       <span className="text-zinc-300/[65%]">#!/bin/bash</span>

@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* generate og image */}
-        <meta property="og:image" content="/frontend.png" />
+        <meta property="og:image" content="/kinesis.png" />
       </head>
       <body
         className={`${inter.className} flex flex-col items-center bg-black/80`}
