@@ -2,8 +2,8 @@
 
 export const images = {
   openGraphImage: {
-    url: "/kinesis.png",
-    width: 1200,
-    height: 630,
+    url: "/globalchatdark.png",
+    width: 1301,
+    height: 865,
   },
 };
