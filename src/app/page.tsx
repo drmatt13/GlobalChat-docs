@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-full flex flex-col items-center pt-12 lg:pt-16 pb-10 md:pb-12 px-6 sm:px-10 text-sm sm:text-base">
+      <div className="w-full flex flex-col items-center text-sm sm:text-base">
         <h1 className="text-lg lg:text-2xl font-bold mb-2.5">GlobalChat</h1>
         <h2 className="text-sm lg:text-md mb-10 opacity-75">
           Connect Globally, Chat Instantly
@@ -28,16 +28,15 @@ export default function Home() {
         <video
           src="/chat.mkv"
           controls={true}
-          className="max-w-full md:w-[90%] lg:w-[75%]"
+          className="w-full max-w-2xl aspect-video"
         ></video>
         <a
-          href="https://github.com/drmatt13/GlobalChat"
+          href="https://github.com/drmatt13/Tiered-API-Access-Manager-IaC"
           className="text-blue-600 hover:underline cursor-pointer mt-8 text-base lg:text-xl visited:text-purple-600"
         >
-          github repository
+          GitHub Repository
         </a>
         {/* ********************************************* */}
-
         <div className="mt-6 max-w-[90vw] w-full text-sm lg:text-md">
           <p>
             GlobalChat is a sophisticated web-based chat application that
@@ -90,7 +89,6 @@ export default function Home() {
           {/* <p className="mt-6">****</p> */}
         </div>
         {/* ********************************************* */}
-
         <h2 className="text-md lg:text-xl mt-12 md:mt-14 mb-8 md:mb-10 font-bold text-center">
           Deploy Locally
         </h2>
@@ -145,7 +143,6 @@ export default function Home() {
             </span>
           </p>
         </div>
-
         {/* ********************************************* */}
         <h2 className="text-md lg:text-xl mt-12 mb-8 md:mt-14 md:mb-10 font-bold text-center">
           Deploy To AWS
