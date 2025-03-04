@@ -31,7 +31,7 @@ export default function Home() {
           className="w-full max-w-2xl aspect-video"
         ></video>
         <a
-          href="https://github.com/drmatt13/Tiered-API-Access-Manager-IaC"
+          href="https://github.com/drmatt13/GlobalChat"
           className="text-blue-600 hover:underline cursor-pointer mt-8 text-base lg:text-xl visited:text-purple-600"
         >
           GitHub Repository
